@@ -11,3 +11,4 @@ echo 1 | sudo tee /proc/sys/net/bridge/bridge-nf-call-arptables && \
 nomad -version
 sudo apt-get install -y linux-modules-extra-$(uname -r)
 sudo nomad agent -dev -bind 0.0.0.0 -log-level INFO
+!nomad node status
